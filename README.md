@@ -6,3 +6,6 @@ To revert the audio back to the original image, make sure to navigate to the sam
 
 ⚠️ Note: Ensure you're in the correct folder when locating the audio file for image restoration.
 
+(the provided files comprise of an audio file and an image for demonstration purpose)
+
+
