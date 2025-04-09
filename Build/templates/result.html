@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <p>{{ message }}</p>
+    <a href="/">Go Back</a>
+
+    {% if image %}
+    <hr>
+    <h2>Decrypted Image:</h2>
+    <img src="{{ url_for('static', filename=image) }}" alt="Decrypted Image" id="decrypted-image">
+    {% endif %}
+</body>
+</html>

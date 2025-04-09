@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Embedded Image Security</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Audio Embedded Image Security</h1>
+    
+    <!-- Form for encrypting and embedding the image -->
+    <h2>Encrypt and Embed Image into Audio</h2>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="encrypt-file">Upload Image (to Encrypt):</label>
+        <input type="file" id="encrypt-file" name="file" accept="image/*" required>
+        <button type="submit">Encrypt and Embed</button>
+    </form>
+    
+    <hr>
+
+    <!-- Form for decrypting the audio back to image -->
+    <h2>Decrypt Audio to Image</h2>
+    <form action="/decrypt" method="POST" enctype="multipart/form-data">
+        <label for="decrypt-file">Upload Audio (to Decrypt):</label>
+        <input type="file" id="decrypt-file" name="file" accept="audio/wav" required>
+        <button type="submit">Decrypt Audio</button>
+    </form>
+</body>
+</html>
